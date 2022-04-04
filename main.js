@@ -20,7 +20,7 @@ fetchPromise.then(response => {
                 face.classList.add('face');
             let frame = document.createElement('iframe');
                 frame.setAttribute('src', gifs[i]);
-                frame.classList.add('giphy-embed');
+                frame.classList.add('gif');
                 face.appendChild(frame);
                 column.appendChild(face);
                 container.appendChild(column);
@@ -47,7 +47,7 @@ function reload(){
                 face.classList.add('face');
             let frame = document.createElement('iframe');
                 frame.setAttribute('src', gifs[i]);
-                frame.classList.add('giphy-embed');
+                frame.classList.add('gif');
                 face.appendChild(frame);
                 column.appendChild(face);
                 container.appendChild(column);
@@ -55,4 +55,3 @@ function reload(){
     });
 });
 }
-
