@@ -1,10 +1,10 @@
 const getData = {
     key: "LLJaKh9CU7LXwRsAIx7pR3dI2i7aIu48",
-    limitBegin: 24,
+    limit: 24,
 };
 
 let gifs = [];
-const fetchPromise = fetch(`https://api.giphy.com/v1/gifs/trending?key=${getData.key}&limit=${getData.limitBegin}`);
+const fetchPromise = fetch(`https://api.giphy.com/v1/gifs/trending?key=${getData.key}&limit=${getData.limit}`);
 fetchPromise.then(response => {
     const jsonPromise = response.json();
     jsonPromise.then(json => {
