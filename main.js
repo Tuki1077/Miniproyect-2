@@ -29,7 +29,7 @@ fecthURL.then(response => {
 });
 
 function moreGifs(){
-    ran = Math.floor((Math.random() * 1000) + 1);
+    ran = Math.floor((Math.random() * 9999) + 1);
     let gifs = [];
     const fecthURL = fetch(`https://api.giphy.com/v1/gifs/trending?key=${getData.key}&limit=12&offset=${ran}`);
     fecthURL.then(response => {
